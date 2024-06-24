@@ -1,0 +1,345 @@
+/* Start Variables */
+:root {
+  --main-color: #fe52c0;
+  --secondary-color: #00252e;
+  --section-padding: 100px;
+  --main-transition: 0.3s;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+}
+ul {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Start Header */
+header {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: cover;
+  max-height: calc(100vh + 100px);
+  background-color: #e8f9ff;
+}
+@media (max-width: 991px) {
+  header {
+    background-image: url(../images/bg-hero-mobile.svg);
+  }
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+@media (max-width: 991px) {
+  .head {
+    margin-bottom: 30px;
+  }
+}
+.head .logo img {
+  width: 120px;
+}
+.head a {
+  background-color: #ffffff;
+  color: var(--secondary-color);
+  padding: 10px 40px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: var(--main-transition);
+}
+.head a:hover {
+  color: #596265;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.content .info h2 {
+  font-size: 30px;
+  max-width: 300px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .content .info h2 {
+    margin: auto;
+    font-size: 25px;
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+}
+.content .info p {
+  max-width: 340px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--secondary-color);
+  margin-bottom: 25px;
+}
+@media (max-width: 991px) {
+  .content .info p {
+    font-size: 16px;
+    max-width: 280px;
+  }
+}
+.content .info a {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: var(--main-transition);
+}
+@media (max-width: 991px) {
+  .content .info a {
+    padding: 12px 60px;
+  }
+}
+.content .info a:hover {
+  background-color: #ff9bdb;
+}
+.content .image img {
+  width: 500px;
+}
+@media (max-width: 991px) {
+  .content .image img {
+    width: 300px;
+    margin-top: 60px;
+  }
+}
+/* End Header */
+/* Start Article*/
+article {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+article .box {
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 30px 80px;
+  margin-bottom: 25px;
+}
+@media (max-width: 991px) {
+  article .box {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+article .box h3 {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  article .box h3 {
+    margin-top: 30px;
+    font-size: 26px;
+  }
+}
+article .box p {
+  font-size: 13px;
+  color: #a8a8a8;
+  line-height: 1.6;
+  max-width: 350px;
+}
+article .box .image img {
+  width: 300px;
+}
+article .box:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+@media (max-width: 991px) {
+  article .box:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+}
+/* End Article*/
+/* Start Started */
+.started {
+  width: 550px;
+  height: 180px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  top: 90px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .started {
+    width: 380px;
+    padding: 15px;
+  }
+}
+.started h2 {
+  margin: 20px auto 40px;
+}
+.started a {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 60px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #777;
+  transition: var(--main-transition);
+}
+.started a:hover {
+  background-color: #ff9bdb;
+}
+/* End Started */
+/* Start Footer */
+footer {
+  background-color: var(--secondary-color);
+  height: 360px;
+  color: white;
+}
+@media (max-width: 991px) {
+  footer {
+    height: 680px;
+  }
+}
+footer .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+@media (max-width: 991px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+footer .image img {
+  width: 140px;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+}
+@media (max-width: 991px) {
+  footer .image img {
+    left: 5px;
+    top: 70px;
+  }
+}
+footer .location {
+  margin-bottom: 20px;
+}
+footer .location img {
+  width: 12px;
+  margin-right: 15px;
+}
+footer .location p {
+  display: inline;
+  max-width: fit-content;
+  font-size: 12px;
+}
+footer .us {
+  display: flex;
+}
+@media (max-width: 991px) {
+  footer .us {
+    flex-direction: column;
+  }
+}
+footer .us ul {
+  margin-right: 80px;
+  list-style: none;
+}
+footer .us ul li {
+  padding-bottom: 20px;
+}
+footer .us ul li a {
+  color: white;
+  font-size: 13px;
+  transition: var(--main-transition);
+}
+footer .us ul li a:hover {
+  text-decoration: underline;
+}
+footer .social ul {
+  display: flex;
+  list-style: none;
+}
+@media (max-width: 991px) {
+  footer .social ul {
+    margin: 30px auto;
+  }
+}
+footer .social ul i {
+  font-size: 12px;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 6px;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+footer .social ul i:hover {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+footer .copy div {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  footer .copy div {
+    margin: -20px auto;
+  }
+}
+footer .copy div i {
+  font-size: 12px;
+  margin-right: 4px;
+}
+/* End Footer */
